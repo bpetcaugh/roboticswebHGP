@@ -30,17 +30,16 @@
 <main role="main">
 
 
+
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <div class="container noCarouselpadding">
 
-
-  <?php
-    //Test Connection to DB
-    include("./includes/connectdb.php");
-  ?>
+        <center>
+                <iframe src="https://calendar.google.com/calendar/embed?src=holyghostprep.org_lgg7i5ob1ar3iq3t4bffggm6fo%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              </center>
 
   </div><!-- /.container -->
 
