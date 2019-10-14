@@ -10,7 +10,7 @@
 			<?php } else { ?>
 			<li class="nav-item">
 			<?php } ?>
-				<a class="nav-link" href="#">Home<?php if ($CURRENT_PAGE == "index") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
+				<a class="nav-link" href="index.php">Home<?php if ($CURRENT_PAGE == "index") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
 	  		</li>
 	  		<li class="nav-item">
 				<a class="nav-link disabled" href="#">About</a>
@@ -23,7 +23,7 @@
 			<?php } else { ?>
 			<li class="nav-item">
 			<?php } ?>
-		  		<a class="nav-link" href="calendar.html">Calendar<?php if ($CURRENT_PAGE == "calendar") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
+		  		<a class="nav-link" href="calendar.php">Calendar<?php if ($CURRENT_PAGE == "calendar") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
 			</li>
 			<li class="nav-item">
 		  		<a class="nav-link disabled" href="#">Fundraising</a>
@@ -36,7 +36,7 @@
 			<?php } else { ?>
 			<li class="nav-item">
 			<?php } ?>
-		  		<a class="nav-link" href="#">Teams<?php if ($CURRENT_PAGE == "teams") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
+		  		<a class="nav-link" href="teams.php">Teams<?php if ($CURRENT_PAGE == "teams") { ?><xpan class="sr-only">(current)</span><?php } ?></a>
 	  		</li>
 		</ul>
   	</div>
