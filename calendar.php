@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php include("./includes/header.php"); ?>
-
+	<?php include("./includes/header.php"); ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -29,7 +28,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -38,17 +37,23 @@
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Alumni</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="calendar.html">Calendar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Fundraising</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Highlights</a>
+          <a class="nav-link" href="highlights.html">Highlights</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">Teams</a>
+            <a class="nav-link" href="join.html">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="teams.html">Teams</a>
         </li>
       </ul>
 
@@ -59,17 +64,16 @@
 <main role="main">
 
 
+
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <div class="container noCarouselpadding">
 
-
-  <?php
-    //Test Connection to DB
-    include("./includes/connectdb.php");
-  ?>
+        <center>
+                <iframe src="https://calendar.google.com/calendar/embed?src=holyghostprep.org_lgg7i5ob1ar3iq3t4bffggm6fo%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+              </center>
 
   </div><!-- /.container -->
 
@@ -77,7 +81,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2019 Holy Ghost Preparatory School &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2017-2019 Holy Ghost Preparatory School</p>
   </footer>
 </main>
 
