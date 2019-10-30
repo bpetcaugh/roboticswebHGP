@@ -140,19 +140,17 @@ $result = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_assoc($result)) {
            echo "
             <div class='card'>
-            <div class='card-header'>
+            <div class='card-header col-md-12'>
                 " . $row['Team Name'] . " - " . $row['Team Number'] . "
             </div>
+            <div class='card mb-12 box-shadow'>
+            <img class=\"card-img-top\" src=\"./pics/" . $row['Team Picture'] . "\" alt=\"Card image cap\">
             <div class='card-body'>
-                <h5 class='card-title'>Awards</h5>
-                <p class='card-text'> " . $row['Awards'] . "</p>
-                <p>This is the team titled " . $row['Team Name'] . " and numbered " . $row['Team Number'] . " . The name of their robot is " . $row['Team Name'] . ". The members in their team are " . $row['Team Name'] . ". TEAM AWARDS include: TEAM AWARDS. A little bit about their team: TEAM BIO.</p>
-                <h5 class='card-title'>Team Bio</h5>
-                <p class='card-text'> " . $row['Team Bio'] . "</p>
-                <img class=\"card-img-top\" src=\"./pics/" . $row['Team Picture'] . "\" alt=\"Card image cap\">
-                <a href='#' class='btn btn-primary'>Go somewhere</a>
+                <p>This is the team titled " . $row['Team Name'] . " and numbered " . $row['Team Number'] . " . The name of their robot is " . $row['Robot Name'] . ". The members in their team are " . $row['Team Members'] . ". TEAM AWARDS include: " . $row['Awards'] . ". A little bit about their team: " . $row['Team Bio'] . ".</p>
             </div>
             </div>
+            </div>
+            <br><br>
 
             
             ";
@@ -163,20 +161,6 @@ $result = mysqli_query($conn, $sql);
     
     mysqli_close($conn);
 ?>   
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="./pics/alums.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is the team title TEAM NAME and numbered TEAM NUMER. The name of their robot is ROBOT NAME. The members in their team are TEAM MEMBERS. TEAM AWARDS include: TEAM AWARDS. A little bit about their team: TEAM BIO.</p>
-                  <small class="text-muted">TEAM NAME</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-  </div><!-- /.container -->
 
 
   <!-- FOOTER -->
