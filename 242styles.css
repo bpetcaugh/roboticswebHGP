@@ -112,4 +112,7 @@ body {
       padding-top: 6em;
   }
   
-  
+  .col-md-6 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }

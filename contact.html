@@ -127,6 +127,53 @@
       <h1 style="text-align: left;">Email List</h1>
       <p style="text-align: left;">To add yourself to the email list, click the button below and follow the directions.</p>
       <button class="btn btn-danger ml-auto rightMe" data-toggle="modal" data-target="#emailModal">ADD ME</button>
+
+      <br><br><br>
+
+      <div class="container">
+          <div class="row">
+              <!-- Title -->
+              <div class="" data-wow-delay=".2s">
+                  <h1 class="section-title">Drop the Robotic Family a Line</h1>
+              </div>
+          </div>
+          <div class="row">
+              <!-- contact form -->
+              <div class="" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group">
+                        <label class="control-label" for="name" style="text-align: left;">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" style="text-align: left;" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group">
+                        <label class="control-label" for="email" style="text-align: left;">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" style="text-align: left;" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group">
+                        <label class="control-label" style="text-align: left;">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" style="text-align: left;" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group">
+                          <label for="message" class="control-label" style="text-align: left; width: 30rem;">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" style="text-align: left;" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit">
+                          <button class="btn btn-danger ml-auto rightMe" type="submit">SEND</button>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
             
     </container>
 
