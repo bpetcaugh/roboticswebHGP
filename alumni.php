@@ -39,7 +39,7 @@ $result = mysqli_query($conn, $sql);
   <body>
 
     <header>
-    <?php include("navigation.ssi"); ?>
+    <?php include("./includes/navbar.php"); ?>
       </header>
 
       <div class="bd-example">
