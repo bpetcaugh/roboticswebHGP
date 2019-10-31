@@ -145,7 +145,7 @@ if (mysqli_num_rows($result) > 0) {
          <div class='card mb-4 box-shadow'>
            <img class='card-img-top' src='./pics/thumbnail.PNG' alt='Card image cap'>
            <div class='card-body'>
-             <p class='card-text'>This is Jack Pinkstone. He graduated from Holy Ghost Prep in 2019. Currently he is at _______ and is finding great success while studying ______</p>
+             <p class='card-text'>" . $row['Card Description'] . "</p>
              <div class='d-flex justify-content-between align-items-center'>
                <div class='btn-group'>
                  <button type='button' data-toggle='modal' data-target='#". $row['lastname'] . "' class='btn btn-sm btn-outline-secondary'>View More</button>
