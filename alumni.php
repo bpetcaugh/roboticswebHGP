@@ -89,7 +89,7 @@ $result = mysqli_query($conn, $sql);
 
      
     
-
+          
 <?php
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
@@ -167,6 +167,8 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($conn);
 ?>  
 </main>
+</div>
+</div>
     <div class="container noCarouselpadding">  
 
     <footer class="text-muted">
