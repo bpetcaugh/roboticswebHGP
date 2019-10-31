@@ -12,16 +12,16 @@ echo '
                 <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link disabled" href="alumni.php">Alumni</a>
+                  <a class="nav-link" href="alumni.php">Alumni</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="calendar.html">Calendar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="fundraising.html">Fundraising</a>
+                  <a class="nav-link" href="fundraising.html">Fundraising</a>
                 </li>
               <li class="nav-item">
                 <a class="nav-link" href="highlights.html">Highlights</a>
@@ -34,7 +34,7 @@ echo '
                 </li>
               <li class="nav-item">
               <li class="nav-item">
-                  <a class="nav-link disabled" href="teams.php">Teams</a>
+                  <a class="nav-link" href="teams.php">Teams</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
