@@ -52,6 +52,7 @@ $result = mysqli_query($conn, $sql);
   </head>
   <body>
     <header>
+        <!--
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
     <a class="navbar-brand" href="index.html"><img class="toplogo" src="./pics/fb_logo2.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,6 +91,9 @@ $result = mysqli_query($conn, $sql);
       
     </div>
   </nav>
+    -->
+
+    <?php include("./includes/navbar.php"); ?>
 </header>
 
 <main role="main">
