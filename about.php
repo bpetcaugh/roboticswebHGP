@@ -1,15 +1,15 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/connectdb.php"; ?>
+<?php include ("connectdb.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include("./includes/connectdb.php"); ?>
+  <?php include("heaf.php"); ?>
     <link href="242styles.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
-    <?php include("./includes/navbar.php"); ?>
+    <?php include("navbar.php"); ?>
     </header>
 
     <main role="main">
@@ -94,11 +94,11 @@
     </main>
 
     <footer class="text-muted">
-    <?php include("./includes/footer.php"); ?>
+    <?php include("footer.php"); ?>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <?php include("./includes/bootstrapScripts.php"); ?>
+    <?php include("/bootstrapScripts.php"); ?>
   </body>
 </html>
