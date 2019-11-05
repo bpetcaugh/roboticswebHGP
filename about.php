@@ -2,21 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title> About Page </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
-
-    <!-- Bootstrap core CSS -->
-
-
-    <!-- Custom styles for this template -->
+  <?php include("./includes/connectdb.php"); ?>
     <link href="242styles.css" rel="stylesheet">
   </head>
 
