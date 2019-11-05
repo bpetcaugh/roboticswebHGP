@@ -22,7 +22,7 @@
                   <a class="nav-link" href="fundraising.php">Fundraising</a>
                 </li>
               <li class="nav-item">
-                <a class="nav-link" href="highlights.html">Highlights</a>
+                <a class="nav-link" href="highlights.php">Highlights</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="join.php">Join</a>
