@@ -1,4 +1,4 @@
-<?php include("./includes/connectdb.php"); ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/connectdb.php"; ?>
 <?php 
 
 if( isset ( $_POST[teamName] && !empty ($_POST[teamName])  ) ) { 

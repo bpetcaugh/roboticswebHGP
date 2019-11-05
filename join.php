@@ -1,4 +1,4 @@
-<?php include("./includes/connectdb.php"); ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/connectdb.php"; ?>
 <!doctype html>
 <html lang="en">
   <head>
