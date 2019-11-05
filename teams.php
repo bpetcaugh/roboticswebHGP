@@ -1,16 +1,22 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/connectdb.php"; ?>
+<?php include "connectdb.php"; ?>
+
+
 <?php 
 
-if( isset ( $_POST[teamName] && !empty ($_POST[teamName])  ) ) { 
-
-    $sql = "INSERT INTO Teams ('Team Name', 'Team Number', 'Team Members', 'Awards', 'Team Picture', 'Team Bio','Robot Name')
-    VALUES ('" .$_POST[teamName] . "', '', '', '', '', '', '')";
+if( isset( $_POST['teamName']) && !empty($_POST['teamName'])  ) { 
+  echo "<br><br><br><br>We here now!";
+    $sql = "INSERT INTO Teams (TeamName, TeamNumber, TeamMembers, Awards, TeamPicture, TeamBio, RobotName)
+    VALUES ('" .$_POST['teamName'] . "', '0', '', '', '', '', '')";
 
     if (mysqli_query($conn, $sql)) {
+      echo "<br><br><br><br>";
         echo "New record created successfully";
     } else {
+      echo "<br><br><br><br>";
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
+} else {
+  echo "<br><br><br><br>We couldn't do that thang!";
 }
 
 mysqli_close($conn);
@@ -20,11 +26,11 @@ mysqli_close($conn);
 <!doctype html>
 <html lang="en">
   <head>
-    <?php include("./includes/head.php"); ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/head.php"; ?>
   </head>
   <body>
     <header>
-      <?php include("./includes/navbar.php"); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/navbar.php"; ?>
     </header>
 
 <main role="main">
@@ -98,16 +104,17 @@ mysqli_close($conn);
 ?>   
 
 <form action="" method="post">
-Name: <input type="text" name="teamname"><br>
+Name: <input type="text" name="teamName"><br>
 <input type="submit">
 </form>
 
   <!-- FOOTER -->
   <footer class="container">
-    <?php include("./includes/footer.php"); ?>
+  <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/footer.php"; ?>
   </footer>
 </main>
 
-    <?php include("./includes/bootstrapScripts.php"); ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/bootstrapScripts.php"; ?>
  </body>
 </html>
+
