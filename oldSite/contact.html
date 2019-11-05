@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="242 Firebirds website">
+    <meta name="author" content="Brandon Petcaugh, 242 team">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>242 Firebirds</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .carousel-inner{
+        width:100%;
+        max-height: 200px;
+        padding-bottom: 1px;
+      }
+      
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="242styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="index.html"><img class="toplogo" src="./pics/fb_logo2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendar.html">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Fundraising</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="highlights.html">Highlights</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="join.html">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="teams.html">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fundraising.html">Fundraising</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      </ul>
+      
+    </div>
+  </nav>
+</header>
+
+<!-- The Email Modal -->
+<div class="modal fade" id="emailModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <p style="text-align: center;"><i>THIS FORM DOES NOT FUNCTION YET</i></p>
+                        <label for="uname1">Email</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                    </div>
+                    <div class="form-group py-4">
+                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Add Me</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<main role="main">
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container noCarouselpadding">
+
+    <container>
+      <h1 style="text-align: left;">Email List</h1>
+      <p style="text-align: left;">To add yourself to the email list, click the button below and follow the directions.</p>
+      <button class="btn btn-danger ml-auto rightMe" data-toggle="modal" data-target="#emailModal">ADD ME</button>
+
+      <br><br><br>
+
+      <div class="container">
+          <div class="row">
+              <!-- Title -->
+              <div class="" data-wow-delay=".2s">
+                  <h1 class="section-title">Drop the Robotic Family a Line</h1>
+              </div>
+          </div>
+          <div class="row">
+              <!-- contact form -->
+              <div class="" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group">
+                        <label class="control-label" for="name" style="text-align: left;">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" style="text-align: left;" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group">
+                        <label class="control-label" for="email" style="text-align: left;">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" style="text-align: left;" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group">
+                        <label class="control-label" style="text-align: left;">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" style="text-align: left;" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group">
+                          <label for="message" class="control-label" style="text-align: left; width: 30rem;">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" style="text-align: left;" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit">
+                          <button class="btn btn-danger ml-auto rightMe" type="submit">SEND</button>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+            
+    </container>
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2019 Holy Ghost Preparatory School &middot; </p>
+  </footer>
+</main>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

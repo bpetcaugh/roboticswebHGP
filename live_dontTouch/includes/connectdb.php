@@ -16,7 +16,8 @@ if ($conn->connect_error) {
     echo '</div>';
     die("Connection failed: " . $conn->connect_error);
 }
-echo '<div class="alert alert-success" data-dismiss="alert" role="alert">';
+
+/*echo '<div class="alert alert-success" data-dismiss="alert" role="alert">';
     echo 'Connected successfully!'
-echo '</div>';
+echo '</div>';*/
 ?>
