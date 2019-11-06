@@ -1,18 +1,18 @@
 <?php session_start(); 
 
-include("connectdb.php");?> 
+include 'connectdb.php';?> 
 
 
 <!doctype html>
 <html lang="en">
   <head>
-   <?php include("head.php");?> 
+   <?php include 'head.php';?> 
   </head>
 
   <body>
 
     <header>
-    <?php include("navbar.php"); ?>
+    <?php include 'navbar.php'; ?>
       </header>
 
       <div class="bd-example">
@@ -64,6 +64,12 @@ include("connectdb.php");?>
     
           
 <?php
+
+
+$sql = "SELECT * FROM alumni";
+$result = mysqli_query($conn, $sql);
+
+
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
