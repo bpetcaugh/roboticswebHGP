@@ -1,6 +1,8 @@
 <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/connectdb.php"; ?>
-<?php 
 
+
+<?php 
+/*
 if( isset ( $_POST[teamName] && !empty ($_POST[teamName])  ) ) { 
 
     $sql = "INSERT INTO Teams ('Team Name', 'Team Number', 'Team Members', 'Awards', 'Team Picture', 'Team Bio','Robot Name')
@@ -14,8 +16,10 @@ if( isset ( $_POST[teamName] && !empty ($_POST[teamName])  ) ) {
 }
 
 mysqli_close($conn);
-
+*/
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -97,10 +101,12 @@ mysqli_close($conn);
     mysqli_close($conn);
 ?>   
 
+<!--
 <form action="" method="post">
 Name: <input type="text" name="teamname"><br>
 <input type="submit">
 </form>
+  -->
 
   <!-- FOOTER -->
   <footer class="container">
