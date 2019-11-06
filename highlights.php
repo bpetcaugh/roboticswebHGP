@@ -11,11 +11,9 @@
   </head>
   <body>
     <header>
-<<<<<<< HEAD
-    <?php include("./includes/navbar.php"); ?>
-=======
+
     <?php include("navbar.php"); ?>   
->>>>>>> master
+
 </header>
 
 <main role="main">
