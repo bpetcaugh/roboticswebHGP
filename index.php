@@ -87,22 +87,23 @@
           <div class="carousel-caption">
             <h1>Volunteers Needed</h1>
             <p>We will be hosting a VEX competition on October 26th in the Firebird Fieldhouse. Parents and community members can use the button below to sign up for a slot. This event would not happen without your continued support!</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="about.php" role="button">About Us</a></p>
           </div>
         </div>
       </div>
 
-      <div class="carousel-item">
-        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+  <!-- <div class="carousel-item">
+       <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>-->
+       <!--
         <img src="./pics/lab2.JPG">
-        <div class="container">
+        <div class="container"> 
           <div class="carousel-caption text-left">
             <h1>242 Firebirds</h1>
             <p>Hosted at Holy Ghost Preparatory School, we are a competitive VEX Robotics team.</p>
             <p><a class="btn btn-lg btn-danger" href="about.html" role="button">Read More</a></p>
           </div>
         </div>
-      </div>
+      </div>  -->
       <!--
       <div class="carousel-item">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
