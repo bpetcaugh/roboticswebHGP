@@ -128,12 +128,12 @@ if (mysqli_num_rows($result) > 0) {
 </div>
                </div>
                <small class='text-muted'>" . $row['firstname'] . " ". $row['lastname'] . "</small>
-             </div>
-           </div>
-         </div>
-   </div>
-  </div>
-  </div>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
     
 
       

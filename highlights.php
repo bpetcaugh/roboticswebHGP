@@ -11,9 +11,7 @@
   </head>
   <body>
     <header>
-
     <?php include("navbar.php"); ?>   
-
 </header>
 
 <main role="main">
@@ -27,6 +25,7 @@
   <div class="container noCarouselpadding">
 
       <?php
+      
       if (mysqli_num_rows($result) > 0) {
         // output data of each row
         while($row = mysqli_fetch_assoc($result)) {

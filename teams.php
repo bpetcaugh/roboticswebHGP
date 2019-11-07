@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 
 <?php include "connectdb.php"; ?>
+=======
+<?php include 'connectdb.php'; ?>
+>>>>>>> Stashed changes
 
 
 <?php 
@@ -30,11 +34,11 @@ mysqli_close($conn);
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/head.php"; ?>
+  <?php include 'head.php'; ?>
   </head>
   <body>
     <header>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/navbar.php"; ?>
+    <?php include 'navbar.php'; ?>
     </header>
 
 <main role="main">
@@ -119,11 +123,11 @@ Name: <input type="text" name="teamName"><br>
 
   <!-- FOOTER -->
   <footer class="container">
-  <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/footer.php"; ?>
+  <?php include 'footer.php'; ?>
   </footer>
 </main>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/bootstrapScripts.php"; ?>
+<?php include 'bootstrapScripts.php'; ?>
  </body>
 </html>
 

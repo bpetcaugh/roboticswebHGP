@@ -1,15 +1,15 @@
-<?php include ("connectdb.php"); ?>
+<?php include 'connectdb.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include("heaf.php"); ?>
+  <?php include 'head.php'; ?>
     <link href="242styles.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
-    <?php include("navbar.php"); ?>
+    <?php include 'navbar.php'; ?>
     </header>
 
     <main role="main">
@@ -94,11 +94,11 @@
     </main>
 
     <footer class="text-muted">
-    <?php include("footer.php"); ?>
+    <?php include 'footer.php'; ?>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <?php include("/bootstrapScripts.php"); ?>
+    <?php include 'bootstrapScripts.php';  ?>
   </body>
 </html>
