@@ -1,8 +1,8 @@
-<?php include ("connectdb.php"); ?>
+<?php include 'connectdb.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include ("head.php"); ?>
+  <?php include 'head.php'; ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-    <?php include("./includes/navbar.php"); ?>
+    <?php include 'navbar.php'; ?>
 </header>
 
 <main role="main">
@@ -46,10 +46,10 @@
 
   <!-- FOOTER -->
   <footer class="container">
-  <?php include("footer.php"); ?>
+  <?php include 'footer.php'; ?>
   </footer>
 </main>
 
-<?php include("footer.php"); ?>
+<?php include 'bootstrapScripts.php'; ?>
       </body>
 </html>
