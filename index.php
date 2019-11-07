@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include("./includes/head.php"); ?>
+  <?php include("head.php"); ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -32,7 +32,7 @@
   </head>
   <body>
     <header>
-    <?php include("./includes/navbar.php"); ?>
+    <?php include("navbar.php"); ?>
 </header>
 
  <!-- The Login Modal -->
@@ -222,10 +222,10 @@
 
   <!-- FOOTER -->
   <footer class="container">
-  <?php include("./includes/footer.php"); ?>
+  <?php include("footer.php"); ?>
   </footer>
 </main>
 
-<?php include("./includes/bootstrapScripts.php"); ?>      
+<?php include("bootstrapScripts.php"); ?>      
 </body>
 </html>
