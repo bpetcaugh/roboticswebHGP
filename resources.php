@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/head.php"; ?>
+<?php include 'head.php'; ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -31,7 +31,7 @@
   </head>
   <body>
     <header>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/navbar.php"; ?>
+    <?php include 'navbar.php'; ?>
 </header>
 
 <main role="main">
@@ -115,10 +115,10 @@
 
   <!-- FOOTER -->
   <footer class="container">
-  <?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/footer.php"; ?>
+  <?php include 'footer.php'?>
   </footer>
 </main>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."/includes_robot/bootstrapScripts.php"; ?>
+<?php include 'bootstrapScripts.php'; ?>
 </body>
 </html>
