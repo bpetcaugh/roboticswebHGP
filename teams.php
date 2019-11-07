@@ -1,14 +1,10 @@
-<<<<<<< Updated upstream
 
 <?php include "connectdb.php"; ?>
-=======
-<?php include 'connectdb.php'; ?>
->>>>>>> Stashed changes
 
 
 <?php 
->>>>>>> master
 
+/*
 if( isset( $_POST['teamName']) && !empty($_POST['teamName'])  ) { 
   echo "<br><br><br><br>We here now!";
     $sql = "INSERT INTO Teams (TeamName, TeamNumber, TeamMembers, Awards, TeamPicture, TeamBio, RobotName)
@@ -93,12 +89,12 @@ $result = mysqli_query($conn, $sql);
            echo "
             <div class='card'>
             <div class='card-header col-md-12'>
-                " . $row['Team Name'] . " - " . $row['Team Number'] . "
+                " . $row['TeamName'] . " - " . $row['TeamNumber'] . "
             </div>
             <div class='card mb-12 box-shadow'>
-            <img class=\"card-img-top\" src=\"./pics/" . $row['Team Picture'] . "\" alt=\"Card image cap\">
+            <img class=\"card-img-top\" src=\"./pics/" . $row['TeamPicture'] . "\" alt=\"Card image cap\">
             <div class='card-body'>
-                <p>This is the team titled " . $row['Team Name'] . " and numbered " . $row['Team Number'] . " . The name of their robot is " . $row['Robot Name'] . ". The members in their team are " . $row['Team Members'] . ". TEAM AWARDS include: " . $row['Awards'] . ". A little bit about their team: " . $row['Team Bio'] . ".</p>
+                <p>This is the team titled " . $row['TeamName'] . " and numbered " . $row['TeamNumber'] . " . The name of their robot is " . $row['RobotName'] . ". The members in their team are " . $row['TeamMembers'] . ". TEAM AWARDS include: " . $row['Awards'] . ". A little bit about their team: " . $row['TeamBio'] . ".</p>
             </div>
             </div>
             </div>

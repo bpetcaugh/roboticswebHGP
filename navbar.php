@@ -31,7 +31,6 @@
                   <a class="nav-link" href="resources.php">Resources</a>
                 </li>
               <li class="nav-item">
-              <li class="nav-item">
                   <a class="nav-link" href="teams.php">Teams</a>
               </li>
               <li class="nav-item">
