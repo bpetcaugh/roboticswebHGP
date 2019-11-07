@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include("./includes/head.php"); ?>
+  <?php include("head.php"); ?>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
