@@ -11,7 +11,9 @@
   </head>
   <body>
     <header>
+
     <?php include("navbar.php"); ?>   
+
 </header>
 
 <main role="main">

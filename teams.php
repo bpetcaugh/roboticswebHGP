@@ -1,7 +1,9 @@
+
 <?php include "connectdb.php"; ?>
 
 
 <?php 
+>>>>>>> master
 
 if( isset( $_POST['teamName']) && !empty($_POST['teamName'])  ) { 
   echo "<br><br><br><br>We here now!";
@@ -20,8 +22,10 @@ if( isset( $_POST['teamName']) && !empty($_POST['teamName'])  ) {
 }
 
 mysqli_close($conn);
-
+*/
 ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -106,10 +110,12 @@ $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
 ?>   
 
+<!--
 <form action="" method="post">
 Name: <input type="text" name="teamName"><br>
 <input type="submit">
 </form>
+  -->
 
   <!-- FOOTER -->
   <footer class="container">
