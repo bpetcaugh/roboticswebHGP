@@ -1,5 +1,5 @@
 
-<?php include "connectdb.php"; ?>
+<?php include 'connectdb.php'; ?>
 
 
 <?php 
