@@ -1,5 +1,5 @@
 
-<?php include("connectdb.php"); ?>   
+<?php include 'connectdb.php'; ?>   
 
 
 
@@ -7,11 +7,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <?php include("head.php"); ?>   
+  <?php include 'head.php'; ?>   
   </head>
   <body>
     <header>
-    <?php include("navbar.php"); ?>   
+    <?php include 'navbar.php'; ?>   
 </header>
 
 <main role="main">
@@ -70,10 +70,10 @@
 
   <!-- FOOTER -->
   <footer class="container">
-  <?php include("footer.php"); ?>   
+  <?php include 'footer.php'; ?>   
   </footer>
 </main>
 
-<?php include("bootstrapScripts.php"); ?>   
+<?php include 'bootstrapScripts.php'; ?>   
     </body>
 </html>
