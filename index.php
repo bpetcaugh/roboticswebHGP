@@ -32,7 +32,7 @@
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'index'; include 'navbar.php'; ?>
 </header>
 
  <!-- The Login Modal -->

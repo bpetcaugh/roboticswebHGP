@@ -9,7 +9,7 @@
   <body>
 
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'about'; include 'navbar.php'; ?>
     </header>
 
     <main role="main">

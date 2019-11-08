@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'join'; include 'navbar.php'; ?>
 </header>
 
 <main role="main">

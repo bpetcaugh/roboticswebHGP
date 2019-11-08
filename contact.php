@@ -31,7 +31,7 @@
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>  
+    <?php $page = 'contact'; include 'navbar.php'; ?>
 </header>
 
 <!-- The Email Modal -->

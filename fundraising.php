@@ -29,7 +29,7 @@
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'fundraising'; include 'navbar.php'; ?>
 </header>
 
 <main role="main">

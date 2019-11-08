@@ -12,7 +12,7 @@ include 'connectdb.php';?>
   <body>
 
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'alumni'; include 'navbar.php'; ?>
       </header>
 
       <div class="bd-example">

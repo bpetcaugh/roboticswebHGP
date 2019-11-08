@@ -34,7 +34,7 @@ mysqli_close($conn);
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'teams'; include 'navbar.php'; ?>
     </header>
 
 <main role="main">

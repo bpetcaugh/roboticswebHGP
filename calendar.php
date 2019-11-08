@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-    <?php include 'navbar.php'; ?>
+    <?php $page = 'calendar'; include 'navbar.php'; ?>
 </header>
 
 <main role="main">
