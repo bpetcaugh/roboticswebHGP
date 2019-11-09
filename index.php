@@ -149,7 +149,7 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./pics/petcaugh1.JPG">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./pics/bushek1.JPG">
         <h2>President</h2>
         <p>Amelia Fisher is a senior at HGP that </p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>

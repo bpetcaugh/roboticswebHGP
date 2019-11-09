@@ -55,8 +55,14 @@ include 'connectdb.php';?>
             </a>
           </div>
         </div>
+
+
+        <main role="main">
+
+        <div class="container noCarouselpadding">  
                   
-      <div class="album py-5 bg-light">
+      
+        <div class="album py-5 bg-light">
           <div class="container">
             
 
@@ -68,13 +74,14 @@ include 'connectdb.php';?>
 
 $sql = "SELECT * FROM alumni";
 $result = mysqli_query($conn, $sql);
+$result2 = mysqli_query($conn, $sql);
 
 
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
      echo "
-     <!---Jack--->
+
      <div class='row'>
        <div class='col-md-4'>
          <div class='card mb-4 box-shadow'>
@@ -84,9 +91,23 @@ if (mysqli_num_rows($result) > 0) {
              <div class='d-flex justify-content-between align-items-center'>
                <div class='btn-group'>
                  <button type='button' data-toggle='modal' data-target='#". $row['lastname'] . "' class='btn btn-sm btn-outline-secondary'>View More</button>
-                
+                 <button type='button' data-toggle='modal' data-target='#get_in_touch_with_". $row['lastname'] . "' class='btn btn-sm btn-outline-secondary'>Get in Touch</button>
+
+                 </div>
+                 <small class='text-muted'>" . $row['firstname'] . " ". $row['lastname'] . "</small>
+         </div>
+         
+       </div>
+
+       </div>
+       </div>
+      </div>
+
+
+
                 
                  <!-- Modal for more information -->
+                 
 <div class='modal fade' id='". $row['lastname'] . "' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
 <div class='modal-dialog modal-dialog-centered' role='document'>
  <div class='modal-content'>
@@ -106,9 +127,10 @@ if (mysqli_num_rows($result) > 0) {
  </div>
 </div>
 </div>
-<button type='button' data-toggle='modal' data-target='#get_in_touch_with_". $row['lastname'] . "' class='btn btn-sm btn-outline-secondary'>Get in Touch</button>
+
 
 <!---Modal for get in touch w/ jack-->
+
 <div class='modal fade' id='get_in_touch_with_". $row['lastname'] . "' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
 <div class='modal-dialog modal-dialog-centered' role='document'>
  <div class='modal-content'>
@@ -126,14 +148,8 @@ if (mysqli_num_rows($result) > 0) {
  </div>
 </div>
 </div>
-               </div>
-               <small class='text-muted'>" . $row['firstname'] . " ". $row['lastname'] . "</small>
-       </div>
-       </div>
-       </div>
-       </div>
-       </div>
-       </div>
+</div>
+
     
 
       
@@ -143,14 +159,19 @@ if (mysqli_num_rows($result) > 0) {
   echo "0 results";
 }
 
+
+
+
+
+
 mysqli_close($conn);
 ?>  
 
 
-</main>
 </div>
 </div>
-    <div class="container noCarouselpadding">  
+</div>
+
 
     <footer class="text-muted">
       <div class="container">
@@ -161,7 +182,7 @@ mysqli_close($conn);
         <p>Get in touch with our alumni office at: some random email</p>
       </div>
     </footer>
-
+</main>
     <!-- Bootstrap core JavaScript
         
     ================================================== -->
