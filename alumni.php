@@ -12,7 +12,7 @@ include 'connectdb.php';?>
   <body>
 
     <header>
-    <?php $page = 'alumni'; include 'navbar.php'; ?>
+    <?php include 'navbar.php'; ?>
       </header>
 
       <div class="bd-example">
@@ -67,7 +67,7 @@ include 'connectdb.php';?>
             
 
      
-    
+          <div class="row">
           
 <?php
 
@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
   while($row = mysqli_fetch_assoc($result)) {
      echo "
 
-     <div class='row'>
+ 
        <div class='col-md-4'>
          <div class='card mb-4 box-shadow'>
            <img class='card-img-top' src='./pics/thumbnail.PNG' alt='Card image cap'>
@@ -101,9 +101,25 @@ if (mysqli_num_rows($result) > 0) {
 
        </div>
        </div>
-      </div>
+   
 
+      ";
+    }
+  } else { 
+    echo "0 results";
+  }
+  
+  
+  mysqli_close($conn);
+  ?>  
+  </div>
+  <?php
+  $sql = "SELECT * FROM alumni";
 
+if (mysqli_num_rows($result2) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result2)) {
+     echo "
 
                 
                  <!-- Modal for more information -->
@@ -158,10 +174,6 @@ if (mysqli_num_rows($result) > 0) {
 } else { 
   echo "0 results";
 }
-
-
-
-
 
 
 mysqli_close($conn);
