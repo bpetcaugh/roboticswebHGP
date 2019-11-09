@@ -1,3 +1,4 @@
+<!-- Puneet Gupta made this page -->
 <?php session_start(); 
 
 include 'connectdb.php';?> 
@@ -145,7 +146,7 @@ if (mysqli_num_rows($result2) > 0) {
 </div>
 
 
-<!---Modal for get in touch w/ jack-->
+<!---Modal for get in touch -->
 
 <div class='modal fade' id='get_in_touch_with_". $row['lastname'] . "' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
 <div class='modal-dialog modal-dialog-centered' role='document'>

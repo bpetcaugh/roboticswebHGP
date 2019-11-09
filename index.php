@@ -146,12 +146,11 @@
     
         <hr class="featurette-divider">
         <div class="row">
-
+<!-- Puneet Gupta made this -->
 <?php
-        $sql = "SELECT * FROM Cabinet Members";
+$sql = "SELECT * FROM CabinetMembers"; 
 $result = mysqli_query($conn, $sql);
-//$result2 = mysqli_query($conn, $sql);
-
+$result2 = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
@@ -164,7 +163,9 @@ if (mysqli_num_rows($result) > 0) {
         <img class='bd-placeholder-img rounded-circle' width='140' height='140' src=". $row['Picture'].">
         <h2>". $row['Role']."</h2>
         <p>  ". $row['Role Description'] ." </p>
-        <p><a class='btn btn-secondary' href='#' role='button'>View details &raquo;</a></p>
+       
+  <p> <a class='btn btn-secondary' data-toggle='modal' href= '#". $row['lastname'] . "' role='button'>View details &raquo;</a> </p> 
+      
       </div>
       ";
     }
@@ -172,10 +173,48 @@ if (mysqli_num_rows($result) > 0) {
     echo "0 results";
   }
   
-  
-  mysqli_close($conn);
+  ?>
+  </div> 
+
+ <?php
+ 
+ $sql = "SELECT * FROM CabinetMembers";
+
+
+  if (mysqli_num_rows($result2) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result2)) {
+      echo "
+      <div class='modal fade' id= ". $row['lastname'] . " tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
+      <div class='modal-dialog modal-dialog-centered' role='document'>
+       <div class='modal-content'>
+         <div class='modal-header'>
+           <h5 class='modal-title' id='exampleModalLongTitle'>" . $row['firstname'] . " ". $row['lastname'] . "</h5>
+           <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+             <span aria-hidden='true'>&times;</span>
+           </button>
+         </div>
+         <div class='modal-body'>
+             <img class='img-fluid' src = ''". $row['Modal Picture'] . "''/>
+           ". $row['Modal Paragraph'] ." 
+         </div>
+         <div class='modal-footer'>
+           <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+         </div>
+       </div>
+      </div>
+      </div>
+
+    
+    ";
+  }
+} else { 
+  echo "0 results";
+}
+mysqli_close($conn);
+
 ?>
-</div>
+
 
         <!-- Two columns of text below the carousel -->
         <div class="row">
