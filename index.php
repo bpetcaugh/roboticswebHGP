@@ -162,7 +162,7 @@ if (mysqli_num_rows($result) > 0) {
       <div class='col-lg-4'>
         <img class='bd-placeholder-img rounded-circle' width='140' height='140' src=". $row['Picture'].">
         <h2>". $row['Role']."</h2>
-        <p>  ". $row['Role Description'] ." </p>
+        <p>  " . $row['firstname'] . " ". $row['lastname'] . "</p>
        
   <p> <a class='btn btn-secondary' data-toggle='modal' href= '#". $row['lastname'] . "' role='button'>View details &raquo;</a> </p> 
       
