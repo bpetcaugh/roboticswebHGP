@@ -160,7 +160,7 @@ if (mysqli_num_rows($result) > 0) {
     <!-- Three columns of text below the carousel -->
   
       <div class='col-lg-4'>
-        <img class='bd-placeholder-img rounded-circle' width='140' height='140' src=". $row['Picture'].">
+        <img class='bd-placeholder-img rounded-circle' width='140' height='140' src='./pics/" . $row['Picture'] . "'>
         <h2>". $row['Role']."</h2>
         <p>  " . $row['firstname'] . " ". $row['lastname'] . "</p>
        
