@@ -38,8 +38,12 @@
                 <a class="nav-link <?php echo ($page == 'contact') ? "active" : ""; ?>" href="contact.php">Contact</a>
             </li>
             </ul>
-            
+            <ul class="nav navbar-nav navbar-right">
+          
+            <button type="button"  data-toggle="modal" href= "modalLoginForm" class="btn btn-primary">Login</button>
+</ul>
           </div>
         </nav>
 
+       
         <!-- <span class="sr-only">(current)</span> -->
