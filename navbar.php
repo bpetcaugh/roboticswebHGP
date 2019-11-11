@@ -40,12 +40,41 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
           
-            <button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-primary">Login</button>
+            <button class="btn btn-danger ml-auto rightMe" data-toggle="modal" data-target="#loginModal">LOGIN</button>
 </ul>
           </div>
         </nav>
 
-        <!-- The Login Modal -->
+
+  <div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                    <div class="form-group">
+                        <p style="text-align: center;"><i>THIS FORM DOES NOT FUNCTION YET</i></p>
+                        <label for="uname1">Username</label>
+                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                        <label for="pword">Password</label>
+                        <input type="text" class="form-control form-control-lg" name="pword" id="pword" required="">
+                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                    </div>
+                    <div class="form-group py-4">
+                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Add Me</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+        <!--
+      The Login Modal 
  <div class="modal fade" id="loginModal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -80,6 +109,8 @@
         </div>
     </div>
   </div>
+
+-->
 
        
         <!-- <span class="sr-only">(current)</span> -->
