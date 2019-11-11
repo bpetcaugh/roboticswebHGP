@@ -82,7 +82,7 @@
     <div class="carousel-inner">      
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-        <img src="./pics/belltower.jpg">
+        <img src="./pics/lab1.JPG">
         <div class="container">
           <div class="carousel-caption">
             <h1>Volunteers Needed</h1>
@@ -147,8 +147,7 @@ if (mysqli_num_rows($result) > 0) {
             <p class='lead'>". $row['Description']."</p>
           </div>
           <div class='col-md-5'>
-            <!-- <svg class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' width='500' height='500' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid slice' focusable='false' role='img' aria-label='Placeholder: 500x500'><title>Placeholder</title><rect width='100%' height='100%' fill='#eee'/><text x='50%' y='50%' fill='#aaa' dy='.3em'>500x500</text></svg> -->
-            <img class='bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto' width='500' height='500' src='./pics/" . $row['Picture'] . "'>
+          <img class='bd-placeholder-img rounded-circle' width='140' height='140' src='./pics/" . $row['Picture'] . "'>
           </div>
         </div>
         ";
