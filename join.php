@@ -51,7 +51,7 @@
         <br>
 
         <h2>First Steps</h2>
-        <p>Read the <a href="about.html">About</a> page to learn more about our team structure, and team meeting logistics.</p>
+        <p>Read the <a href="about.php">About</a> page to learn more about our team structure, and team meeting logistics.</p>
         <p>Contact the coach to determine the date of the first after-school meeting you should attend.</p>
         <p>Add yourself to the mailing list. (both parents and students)</p>
 
