@@ -65,7 +65,7 @@
                     </div>
                     <div class="form-group py-4">
                         <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Add Me</button>
+                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Login</button>
                     </div>
                 </form>
             </div>
