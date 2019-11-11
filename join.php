@@ -58,7 +58,7 @@
         <br>
 
         <h2>Before the First Meeting</h2>
-        <p>Check out some of the <a href="resources.html">Team Resources</a> to get an explanation of the current VEX challenge, and to begin your journey learning about the VEX systems and programming language.</p>
+        <p>Check out some of the <a href="resources.php">Team Resources</a> to get an explanation of the current VEX challenge, and to begin your journey learning about the VEX systems and programming language.</p>
 
         <br>
 
