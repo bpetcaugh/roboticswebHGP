@@ -30,6 +30,7 @@
         <br>
 
         <h2>First Steps</h2>
+<<<<<<< HEAD
         <p>Below are steps that you can take now to join the team. Additional pieces will be added
           throughout the summer, once documents and forms become finalized. 
         </p>
@@ -50,13 +51,16 @@
 
 <!--        <h2>First Steps</h2>
         <p>Read the <a href="about.html">About</a> page to learn more about our team structure, and team meeting logistics.</p>
+=======
+        <p>Read the <a href="about.php">About</a> page to learn more about our team structure, and team meeting logistics.</p>
+>>>>>>> master
         <p>Contact the coach to determine the date of the first after-school meeting you should attend.</p>
         <p>Add yourself to the mailing list. (both parents and students)</p>
 
         <br>
 
         <h2>Before the First Meeting</h2>
-        <p>Check out some of the <a href="resources.html">Team Resources</a> to get an explanation of the current VEX challenge, and to begin your journey learning about the VEX systems and programming language.</p>
+        <p>Check out some of the <a href="resources.php">Team Resources</a> to get an explanation of the current VEX challenge, and to begin your journey learning about the VEX systems and programming language.</p>
 
         <br>
 
