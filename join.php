@@ -4,23 +4,9 @@
   <head>
   <?php include 'head.php'; ?>
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="242styles.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -29,13 +15,6 @@
 
 <main role="main">
 
-
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container noCarouselpadding">
         <div class="pb-2 mt-4 mb-2 border-bottom">
             <h1>So You Want To Join The Team ...</h1>
@@ -43,14 +22,33 @@
         <br>
         <h2>Requirements</h2>
         <ul style="list-style-type: square;">
-                    <li>You must be a current student at HGP or VJM.</li>
-                    <li>You should be interested in robotics/engineering/computer science. No prior experience required.</li>
-                    <li>The student can not be currently failing a class.</li>
+          <li>You must be a current, or incoming, student at HGP or VJM.</li>
+          <li>You should be interested in robotics/engineering/computer science. No prior experience required.</li>
+          <li>You can not be currently failing a class.</li>
         </ul>
 
         <br>
 
         <h2>First Steps</h2>
+        <p>Below are steps that you can take now to join the team. Additional pieces will be added
+          throughout the summer, once documents and forms become finalized. 
+        </p>
+
+        <br>
+
+        <ol>
+          <li>Read the introduction letter, which is addressed to all students and parents: <a href="forms/robotics_2020season.pdf">LINK TO PDF</a></li>
+          <li>Each student needs to fill out all personal information in the Google Form located here: <a href="https://forms.gle/9BPTVXPRx33WgTPFA">LINK</a></li>
+          <li>Once the form has been completed, each student will be contacted with login information for the new HGP Robotics website. Next steps will be available once the student is logged in.</li>
+        </ol>
+
+        <p>While you wait for login information, remember to make sure that all email addresses for 
+          parents, students, and other family members are registered with our mailing list (link in the navigation bar at the top of this page).
+        </p>
+
+        <hr>
+
+<!--        <h2>First Steps</h2>
         <p>Read the <a href="about.html">About</a> page to learn more about our team structure, and team meeting logistics.</p>
         <p>Contact the coach to determine the date of the first after-school meeting you should attend.</p>
         <p>Add yourself to the mailing list. (both parents and students)</p>
@@ -70,7 +68,7 @@
           <li>A pair of safety goggles, to be kept in the lab. Students can take their own goggles home once the season is over.</li>
         </ul>
         <p>You are view an up-to-date list of current members on our <a href="teams.html">Teams</a> page, under 'Member List.'</p>
-        <hr>
+        <hr>-->
   </div><!-- /.container -->
 
 

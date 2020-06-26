@@ -4,8 +4,6 @@
     <meta name="description" content="242 Firebirds website">
     <meta name="author" content="Brandon Petcaugh, 242 team">
     <meta name="generator" content="Jekyll v3.8.5">
-    <link rel='icon' href='pics/favicon.ico' type='image/x-icon'/ >
-
     <title>242 Firebirds</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">

@@ -11,6 +11,14 @@
                 <a class="nav-link <?php echo ($page == 'index') ? "active" : ""; ?>" href="index.php">Home</a>
               </li>
               <li class="nav-item">
+                  <a class="nav-link <?php echo ($page == 'join') ? "active" : ""; ?>" href="join.php">Join</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <?php echo ($page == 'subscribe') ? "active" : ""; ?>" href="subscribe.php">Subscribe</a>
+              </li>
+
+              <!--
+              <li class="nav-item">
                 <a class="nav-link <?php echo ($page == 'about') ? "active" : ""; ?>" href="about.php">About</a>
               </li>
               <li class="nav-item">
@@ -36,11 +44,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link <?php echo ($page == 'contact') ? "active" : ""; ?>" href="contact.php">Contact</a>
-            </li>
+            </li>-->
             </ul>
+            
             <ul class="nav navbar-nav navbar-right">
           
-            <button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-primary">Login</button>
+            <button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-danger" disabled>Login</button>
 </ul>
           </div>
         </nav>
@@ -80,6 +89,3 @@
         </div>
     </div>
   </div>
-
-       
-        <!-- <span class="sr-only">(current)</span> -->
