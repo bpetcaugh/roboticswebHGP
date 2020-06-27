@@ -1,0 +1,1 @@
+INSERT INTO `users` (`id`, `username`, `password`, `firstname`, `lastname`, `email`, `accessLevel`) VALUES (NULL, 'bpetcaugh', 'V6uRF%CyTTeYd@,e', 'Brandon', 'Petcaugh', 'bpetcaugh@holyghostprep.org', 'root');

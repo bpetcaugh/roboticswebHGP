@@ -48,85 +48,40 @@
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-          
-<<<<<<< HEAD
-            <button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-danger" disabled>Login</button>
-=======
-            <button class="btn btn-danger ml-auto rightMe" data-toggle="modal" data-target="#loginModal">LOGIN</button>
->>>>>>> master
-</ul>
+            <button type="button" class=" btn btn-danger login mx-auto d-block" data-toggle="modal" data-target="#login">Login</button>
+            <!--<button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-danger" disabled>Login</button>-->
+
+          </ul>
+
           </div>
         </nav>
 
-
-  <div class="modal fade" id="loginModal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Login</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<!-- Login modal -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Member Login</h5>
+                            <button type="btn" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="panel mx-auto">
+                                <h2 class="text-center">Login</h2>
+                                <p class="text-center">Please enter your login credentials</p><hr>
+                                <form method="post" action="loginAuth.php">
+                                    <div class="form-group">
+                                        <input type="text" name="username" class="form-control" placeholder="Username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                        <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>" />
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
-                    <div class="form-group">
-                        <p style="text-align: center;"><i>THIS FORM DOES NOT FUNCTION YET</i></p>
-                        <label for="uname1">Username</label>
-                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
-                        <label for="pword">Password</label>
-                        <input type="text" class="form-control form-control-lg" name="pword" id="pword" required="">
-                        <div class="invalid-feedback">Oops, you missed this one.</div>
-                    </div>
-                    <div class="form-group py-4">
-                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-  </div>
-
-        <!--
-      The Login Modal 
- <div class="modal fade" id="loginModal">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Login</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
-                    <div class="form-group">
-                        <p style="text-align: center;"><i>THIS FORM DOES NOT FUNCTION YET</i></p>
-                        <a href="" class="float-right">New user?</a>
-                        <label for="uname1">Username</label>
-                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
-                        <div class="invalid-feedback">Oops, you missed this one.</div>
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
-                        <div class="invalid-feedback">Enter your password too!</div>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="rememberMe">
-                      <label class="custom-control-label" for="rememberMe">Remember me on this computer</label>
-                    </div>
-                    <div class="form-group py-4">
-                        <button class="btn btn-outline-secondary btn-lg" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                        <button type="submit" class="btn btn-danger btn-lg float-right" id="btnLogin">Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-  </div>
-<<<<<<< HEAD
-=======
-
--->
-
-       
-        <!-- <span class="sr-only">(current)</span> -->
->>>>>>> master

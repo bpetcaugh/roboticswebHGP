@@ -1,4 +1,8 @@
-<?php include 'connectdb.php'; ?>
+<?php 
+include("connectdb.php"); 
+require("functions.php");
+checkSession();
+?>
 <!doctype html>
 <html lang="en">
   <head>

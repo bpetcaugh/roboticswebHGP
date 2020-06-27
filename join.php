@@ -1,4 +1,7 @@
-<?php include 'connectdb.php'; ?>
+<?php 
+include("connectdb.php"); 
+require("functions.php");
+?>
 <!doctype html>
 <html lang="en">
   <head>
