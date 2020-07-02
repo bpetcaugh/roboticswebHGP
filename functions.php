@@ -5,6 +5,13 @@
     session_start();
     require("connectdb.php");
 
+//Mark item as complete on checklist
+function update_checklist($id_user, $item) {
+    global $conn;
+    $sql = "UPDATE checklist SET {$item}=1 WHERE uid={$id_user}";
+    mysqli_query($conn, $sql);
+}
+
 //Strip slashes and escape strings for post variables
 function strip($string){
     global $conn;

@@ -16,6 +16,9 @@
               <li class="nav-item">
                 <a class="nav-link <?php echo ($page == 'subscribe') ? "active" : ""; ?>" href="subscribe.php">Subscribe</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link <?php echo ($page == 'meettheteam') ? "active" : ""; ?>" href="meettheteam.php">Meet the Team</a>
+              </li>
 
               <!--
               <li class="nav-item">
@@ -48,7 +51,7 @@
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
-            <button type="button" class=" btn btn-danger login mx-auto d-block" data-toggle="modal" data-target="#login">Login</button>
+            <button type="button" class=" btn login mx-auto d-block" style="background:#a41e34;color:#fff;" data-toggle="modal" data-target="#login">Login</button>
             <!--<button type="button"  data-toggle="modal fade" href= "loginModal" class="btn btn-danger" disabled>Login</button>-->
 
           </ul>

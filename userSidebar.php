@@ -17,26 +17,25 @@
     </div>
     <br />
     <ul class="list-unstyled components">
+		<li>
+			<a href="userDash.php">Dashboard</a>
+		</li>
         <li>
 			<a href="userprofile.php">My Profile</a>
 		</li>
-		<?php
-		if ($_SESSION["setAccessLevel"]) {
-			echo '		<li>
-			<a href="userList.php">User Information</a>
-		</li>';
-		} ?>
-
 		<li>
-			<a href="filesMissing.php">Missing Files</a>
+			<a href="userteam.php">My Team</a>
 		</li>
 		<li>
-			<a href="filesListAll.php">List All Policies</a>
+			<a href="userpay.php">Payment</a>
+		</li>
+		<li>
+			<a href="userswag.php">Swag</a>
 		</li>
 		<?php
-		if ($_SESSION["setAccessLevel"]) {
+		if ($_SESSION["setAccessLevel"] == "root") {
 			echo '		<li>
-			<a href="pendingUpdates.php">Pending Updates</a>
+			<a href="userList.php">Member Info</a>
 		</li>';
 		} ?>
 

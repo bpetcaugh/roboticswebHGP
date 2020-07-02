@@ -25,6 +25,7 @@
 
         if ($row["password"] == $mypassword) {
             $_SESSION["id"] = $row["id"];
+            $_SESSION["username"] = $row["username"];
             if ($row['accessLevel'] == 'root') {
                 $_SESSION["setAccessLevel"] = true;
                 header("location: userDash.php");
